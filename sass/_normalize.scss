@@ -1,0 +1,60 @@
+// Globals
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    line-height: 1.15;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+*, *:before, *:after {box-sizing: inherit;}
+:-moz-focus-inner {border-style: none; outline: 0; padding: 0;}
+:focus {outline: none;}
+.clearfix:after {content: ""; display: table; clear: both;}
+
+// Anchors
+a {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+// Unordered Lists
+ul {list-style-type: none;}
+
+// Images
+img {border-style: none;}
+
+// Icons
+i {font-style: normal;}
+
+// Buttons
+button {
+    cursor: pointer;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+// Inputs
+input {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+// hide IE's "X" (clear field) button in inputs
+:-ms-clear {display: none; width: 0; height: 0;}
+input::-ms-clear {display: none; width: 0; height: 0;}
+
+// Selects
+select:-moz-focusring {color: transparent !important; text-shadow: 0 0 0 #000 !important;}

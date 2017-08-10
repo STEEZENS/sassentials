@@ -1,0 +1,59 @@
+/** CLASSES USED TO DEFINE LAYOUT **/
+
+// Text Alignment
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+
+// Position
+.relative {position: relative;}
+.absolute {position: absolute;}
+.fixed {position: fixed;}
+
+// Anchors
+.top {top: 0;}
+.right {right: 0;}
+.bottom {bottom: 0;}
+.left {left: 0;}
+
+// Display
+.block {display: block;}
+.inline-block {display: inline-block;}
+.inline {display: inline;}
+.display-none {display: none;}
+.opacity-0 {opacity: 0;}
+.table {display: table; height: 100%; width: 100%;}
+.table-cell {display: table-cell; vertical-align: middle;}
+
+// Size
+.full-width {width: 100%;}
+.full-height {height: 100%;}
+
+// Overflow
+.overflow-hidden {overflow: hidden;}
+.overflow-visible {overflow: visible;}
+
+// Vertical Alignment
+.align-top {vertical-align: top;}
+.align-center {vertical-align: middle;}
+.align-bottom {vertical-align: bottom;}
+
+// Horizontal Alignment
+.left-auto {margin-left: auto;}
+.right-auto {margin-right: auto;}
+
+// Spacing
+@each $multiple in $spaceMultiples {
+  $spaceTypes: (padding, margin);
+  $px: ($multiple * $baseSpace);
+  $half: if($multiple==.5, half-, null);
+  $multipleName: if($multiple==1 or $multiple==.5, null, $multiple);
+  @each $spaceType in $spaceTypes {
+    $spaceName: if($spaceType==padding, pad, buff);
+    .#{$half}#{$spaceName}#{$multipleName} {#{$spaceType}: $px;}
+    .#{$half}#{$spaceName}#{$multipleName}-top {#{$spaceType}-top: $px;}
+    .#{$half}#{$spaceName}#{$multipleName}-right {#{$spaceType}-right: $px;}
+    .#{$half}#{$spaceName}#{$multipleName}-bottom {#{$spaceType}-bottom: $px;}
+    .#{$half}#{$spaceName}#{$multipleName}-left {#{$spaceType}-left: $px;}
+  }
+}

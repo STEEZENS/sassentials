@@ -1,0 +1,16 @@
+/** CLASSES USED TO DEFINE STYLE **/
+
+// Background Colors
+.bg-transparent {background-color: transparent;}
+.bg-white {background-color: $white;}
+.bg-black {background-color: $black;}
+
+// Print Colors (contextual)
+body {color: $black;} // default print color
+.bg-black {color: $white;}
+
+// Radii
+.radius-full {border-radius: 50%;}
+
+// Cursor
+.pointer {cursor: pointer;}

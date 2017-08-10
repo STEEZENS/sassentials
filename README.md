@@ -1,2 +1,2 @@
 # sassentials
-Sass boiler-plate for kickstarting projects
+Sass boiler-plate file for kickstarting projects
