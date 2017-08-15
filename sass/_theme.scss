@@ -9,6 +9,10 @@
 body {color: $black;} // default print color
 .bg-black {color: $white;}
 
+// Text Transforms
+.uppercase {text-transform: uppercase;}
+.capitalize {text-transform: capitalize;}
+
 // Radii
 .radius-full {border-radius: 50%;}
 
