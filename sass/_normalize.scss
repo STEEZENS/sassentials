@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 *, *:before, *:after {box-sizing: inherit;}
-:-moz-focus-inner {border-style: none; outline: 0; padding: 0;}
+::-moz-focus-inner {border-style: none; outline: 0; padding: 0; border: 0;}
 :focus {outline: none;}
 .clearfix:after {content: ""; display: table; clear: both;}
 
@@ -39,8 +39,9 @@ i {font-style: normal;}
 button {
     cursor: pointer;
     border: none;
+    -webkit-tap-highlight-color: transparent;
     &:focus {
-        outline: none;
+        outline: 0;
     }
 }
 
